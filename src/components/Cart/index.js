@@ -16,9 +16,10 @@ const Cart = () => (
               <div className="cart-content-container">
                 <h1 className="cart-heading">My Cart</h1>
                 <CartListView />
-                <div>
+                <div className="cart-quantity">
                   <h3>Order Total: RS {totalAmount}/-</h3>
                   <p>{cartList.length} item in your cart</p>
+                  <button>Checkout</button>
                 </div>
               </div>
             </div>

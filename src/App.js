@@ -16,7 +16,13 @@ class App extends Component {
   state = {
     cartList: [],
     totalAmount: 0,
+    addQuantity: () => {},
+    deleteQuantity: () => {},
   }
+
+  addQuantity = product => {}
+
+  deleteQuantity = () => {}
 
   addCartItem = product => {
     const {price, quantity} = product
@@ -48,6 +54,8 @@ class App extends Component {
             cartList,
             addCartItem: this.addCartItem,
             deleteCartItem: this.deleteCartItem,
+            addQuantity: this.addQuantity,
+            deleteQuantity: this.deleteQuantity,
             totalAmount,
           }}
         >
